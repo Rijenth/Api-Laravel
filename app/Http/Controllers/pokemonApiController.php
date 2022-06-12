@@ -4,18 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\pokemon;
 use Illuminate\Http\Request;
-
+use App\Http\Resources\pokemonRessource;
 // Le contrôleur 
 
 class pokemonApiController extends Controller
 {
     public function index(){
-        $result = pokemon::all();
-        return response()->json($result);
+        return pokemonRessource::collection(pokemon::all());
     }
 
     public function show(pokemon $pokemon){
-        return response()->json($pokemon);
+        return new pokemonRessource(($pokemon));
     }
 
     public function store(){
@@ -37,14 +36,15 @@ class pokemonApiController extends Controller
             'Dresseur' => request('Dresseur')
         ]);
 
-        return response()->json($result, 201);
+        /* return response()->json($result, 201); */
+        return new pokemonRessource(($result));
 
     }
 
     public function update(pokemon $pokemon){
 
         request()->validate([
-            // Les champs suivants sont obligatoires car ils ne peuvent
+            // Les champs suivants sont les seules obligatoires car ils ne peuvent
             // pas être NULL.
             'nom_pok' => 'required',
             'type_pok1' => 'required',
@@ -61,12 +61,16 @@ class pokemonApiController extends Controller
         ]);
 
         
-        return response()->json();
+        return response()->json([
+            'status' => $success
+        ]);
     }
 
     public function destroy(pokemon $pokemon){
         $success = $pokemon->delete();
-        return response()->json();
+        return response()->json([
+            'status' => $success
+        ]);
     }
 
 }

@@ -23,7 +23,7 @@
 
       Element absent :
       - un Test
-      - Une ressource API
+      - Une ressource API (en cours)
       - Un form request
 
 5. L’application doit contenir au choix : une notification déclenché par un évènement, 
