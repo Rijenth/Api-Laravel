@@ -4,13 +4,28 @@
 ### Rechercher des
 
 1. La dernière version du framework Laravel doit être utilisée
+   // Done
 
-2. Les réponses de l’API doivent être renvoyées en JSON
+2. Les réponses de l’API doivent être renvoyées en JSON 
+   // A vérifier 
 
-3. Les quatre verbes GET, POST, PATCH et DELETE doivent être utilisées
+3. Les quatre verbes GET, POST, PATCH et DELETE doivent être utilisées 
+   // DONE (Bug sur le verbes patch)
 
 4. L’application doit contenir au moins un modèle, une migration, un contrôleur, 
    une ressource API (https://laravel.com/docs/9.x/eloquent-resources), un form request et un test
+
+   // L'application contient :
+      - Un modèle
+      - Une migration
+      - Un contrôleur
+
+      Element ou je ne suis pas trop sur :
+      - Une ressource API
+      - Un form request
+
+      Element absent :
+      - un Test
 
 5. L’application doit contenir au choix : une notification déclenché par un évènement, 
    une commande Artisan (qui fait plus qu’imprimer du texte),
