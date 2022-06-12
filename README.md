@@ -10,7 +10,7 @@
    // Done
 
 3. Les quatre verbes GET, POST, PATCH et DELETE doivent être utilisées 
-   // DONE (Bug sur le verbe patch)
+   // DONE
 
 4. L’application doit contenir au moins un modèle, une migration, un contrôleur, 
    une ressource API (https://laravel.com/docs/9.x/eloquent-resources), un form request et un test
@@ -19,11 +19,10 @@
       - Un modèle (pokemon.php)
       - Une migration (2022_06_10_095603_create_pokemon_table.php)
       - Un contrôleur (pokemonApiController.php)
+      - Une ressource API (pokemonRessource.php)
      
-
       Element absent :
       - un Test
-      - Une ressource API (en cours)
       - Un form request
 
 5. L’application doit contenir au choix : une notification déclenché par un évènement, 
@@ -35,6 +34,18 @@
 
 7. ’application doit être entièrement fonctionnelle sans bug
 
+Actuellement en cours :
 
+   - Un form request
+
+To be done : 
+
+   - un Test
+   - une notification déclenché par un évènement, 
+   - une commande Artisan (qui fait plus qu’imprimer du texte),
+   - la gestion d’un fichier uploadé (récupération et stockage)
+   - Faire un readme correct
+   - Utiliser l'api pour afficher sur une page (bonus)
+   
 
 

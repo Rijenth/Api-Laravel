@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\pokemon;
 use Illuminate\Http\Request;
 use App\Http\Resources\pokemonRessource;
+
 // Le contrôleur 
 
 class pokemonApiController extends Controller
@@ -36,7 +37,6 @@ class pokemonApiController extends Controller
             'Dresseur' => request('Dresseur')
         ]);
 
-        /* return response()->json($result, 201); */
         return new pokemonRessource(($result));
 
     }
@@ -51,7 +51,7 @@ class pokemonApiController extends Controller
             'description' => 'required',
         ]);
 
-        $success = $pokemon->update([
+        $pokemon->update([
             'nom_pok' => request('nom_pok'), 
             'type_pok1' => request('type_pok1'), 
             'type_pok2' => request('type_pok2'), 
@@ -60,17 +60,13 @@ class pokemonApiController extends Controller
             'Dresseur' => request('Dresseur') 
         ]);
 
-        
-        return response()->json([
-            'status' => $success
-        ]);
+        return new pokemonRessource($pokemon);
     }
 
     public function destroy(pokemon $pokemon){
-        $success = $pokemon->delete();
-        return response()->json([
-            'status' => $success
-        ]);
+        
+        $pokemon->delete();
+        return response()->json(null, 204);
     }
 
 }
