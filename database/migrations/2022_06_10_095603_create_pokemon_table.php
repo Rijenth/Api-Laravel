@@ -18,6 +18,9 @@ return new class extends Migration
         if(!Schema::hasTable('pokemon')){
 
             Schema::create('pokemon', function (Blueprint $table) {
+                $table->charset = 'utf8mb4';
+                $table->collation = 'utf8mb4_unicode_ci';
+                $table->engine = 'InnoDB';
                 $table->bigIncrements('id_pok');
                 $table->string('nom_pok', 10);
                 $table->string('type_pok1', 10);

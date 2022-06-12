@@ -12,4 +12,5 @@ class pokemon extends Model
     public $timestamps = false;
     protected $primaryKey = 'id_pok';
     protected $fillable = ['id_pok','nom_pok','type_pok1','type_pok2','methode_evolve', 'description', 'Dresseur', 'couleur'];
+    
 }
