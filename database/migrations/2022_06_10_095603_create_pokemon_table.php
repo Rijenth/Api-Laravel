@@ -22,7 +22,7 @@ return new class extends Migration
                 $table->collation = 'utf8mb4_unicode_ci';
                 $table->engine = 'InnoDB';
                 $table->bigIncrements('id_pok');
-                $table->string('nom_pok', 10);
+                $table->string('nom_pok', 20);
                 $table->string('type_pok1', 10);
                 $table->string('type_pok2', 10);
                 $table->string('methode_evolve', 20);

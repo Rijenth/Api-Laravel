@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\pokemon;
 use Illuminate\Http\Request;
 use App\Http\Resources\pokemonRessource;
+use App\Http\Requests\pokemonRequest;
 
 // Le contrôleur 
 
@@ -18,15 +19,9 @@ class pokemonApiController extends Controller
         return new pokemonRessource(($pokemon));
     }
 
-    public function store(){
+    public function store(pokemonRequest $request){
 
-        request()->validate([
-            // Les champs suivants sont obligatoires car ils ne peuvent
-            // pas être NULL.
-            'nom_pok' => 'required',
-            'type_pok1' => 'required',
-            'description' => 'required',
-        ]);
+        $request->validated();
 
         $result = pokemon::create([
             'nom_pok' => request('nom_pok'),
@@ -41,16 +36,10 @@ class pokemonApiController extends Controller
 
     }
 
-    public function update(pokemon $pokemon){
+    public function update(pokemonRequest $request, pokemon $pokemon){
 
-        request()->validate([
-            // Les champs suivants sont les seules obligatoires car ils ne peuvent
-            // pas être NULL.
-            'nom_pok' => 'required',
-            'type_pok1' => 'required',
-            'description' => 'required',
-        ]);
-
+        $request->validated();     
+       
         $pokemon->update([
             'nom_pok' => request('nom_pok'), 
             'type_pok1' => request('type_pok1'), 
