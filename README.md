@@ -7,10 +7,10 @@
    // Done
 
 2. Les réponses de l’API doivent être renvoyées en JSON 
-   // A vérifier 
+   // Done
 
 3. Les quatre verbes GET, POST, PATCH et DELETE doivent être utilisées 
-   // DONE (Bug sur le verbes patch)
+   // DONE (Bug sur le verbe patch)
 
 4. L’application doit contenir au moins un modèle, une migration, un contrôleur, 
    une ressource API (https://laravel.com/docs/9.x/eloquent-resources), un form request et un test
@@ -19,13 +19,12 @@
       - Un modèle (pokemon.php)
       - Une migration (2022_06_10_095603_create_pokemon_table.php)
       - Un contrôleur (pokemonApiController.php)
-
-      Element ou je ne suis pas trop sur :
-      - Une ressource API
-      - Un form request
+     
 
       Element absent :
       - un Test
+      - Une ressource API
+      - Un form request
 
 5. L’application doit contenir au choix : une notification déclenché par un évènement, 
    une commande Artisan (qui fait plus qu’imprimer du texte),
@@ -37,6 +36,5 @@
 7. ’application doit être entièrement fonctionnelle sans bug
 
 
-Ce que je dois faire : 
 
-   - Verifier si l'API renvoie bien un réponse en JSON
+
