@@ -16,9 +16,9 @@
    une ressource API (https://laravel.com/docs/9.x/eloquent-resources), un form request et un test
 
    // L'application contient :
-      - Un modèle
-      - Une migration
-      - Un contrôleur
+      - Un modèle (pokemon.php)
+      - Une migration (2022_06_10_095603_create_pokemon_table.php)
+      - Un contrôleur (pokemonApiController.php)
 
       Element ou je ne suis pas trop sur :
       - Une ressource API
@@ -35,3 +35,8 @@
    à la racine
 
 7. ’application doit être entièrement fonctionnelle sans bug
+
+
+Ce que je dois faire : 
+
+   - Verifier si l'API renvoie bien un réponse en JSON
