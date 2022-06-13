@@ -21,9 +21,8 @@
       - Un contrôleur (pokemonApiController.php)
       - Une ressource API (pokemonRessource.php)
       - Un form request (pokemonRequest.php)
-     
-      Element absent :
-      - un Test
+      - un Test (ApiTest.php)
+           
       
 
 5. L’application doit contenir au choix : une notification déclenché par un évènement, 
@@ -36,8 +35,7 @@
 7. ’application doit être entièrement fonctionnelle sans bug
 
 Actuellement en cours :
-
-   - Un test
+   -  une notification déclenché par un évènement
 
 To be done : 
 

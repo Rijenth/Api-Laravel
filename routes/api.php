@@ -25,7 +25,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/pokemon', [pokemonApiController::class, 'index']);
 
 //La méthode 'show' 
-Route::get('/pokemon/{pokemon}', [pokemonApiController::class, 'show']);
+Route::get('/pokemon/{pokemon}', [pokemonApiController::class, 'show'])->name('pokemon.show');
 
 // Le verbe POST
 Route::post('/pokemon', [pokemonApiController::class, 'store']);
