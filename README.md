@@ -36,6 +36,7 @@
 
 Actuellement en cours :
    -  une notification déclenché par un évènement
+      - Les notifications sont stocké dans la base de donnée dans la table 'notifications'
 
 To be done : 
 

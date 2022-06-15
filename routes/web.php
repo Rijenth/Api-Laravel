@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\pokemon;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome.get');
+
+Route::get('/formulaire', function() {
+    return view('formulaire');
+})->name('formulaire.get');
+
+
+
+
+
+

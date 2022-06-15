@@ -23,7 +23,7 @@ class pokemonApiController extends Controller
 
         $request->validated();
 
-        $result = pokemon::create([
+        pokemon::create([
             'nom_pok' => request('nom_pok'),
             'type_pok1' => request('type_pok1'),
             'type_pok2' => request('type_pok2'),
@@ -32,7 +32,8 @@ class pokemonApiController extends Controller
             'Dresseur' => request('Dresseur')
         ]);
 
-        return new pokemonRessource(($result));
+        /* return new pokemonRessource(($result)); */
+        return redirect()->route('formulaire.get');
 
     }
 

@@ -21,8 +21,31 @@
         </style>
     </head>
     <body class="antialiased">
-            <p>Hello world !</p>
-            <button><a href="/formulaire">Créer un pokémon</a></button>
+        
+            <label for="MonFormulaire"></label>
+
+        <form action="/api/pokemon" method="POST">
+
+            <label for="nom_pok">Nom du pokémon :</label>
+            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="nom_pok" /><br>
+
+            <label for="type_pok1">Type du pokémon 1 :</label>
+            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="type_pok1" /><br>
+
+            <label for="type_pok2">Type du pokémon 2 :</label>
+            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="type_pok2" /><br>
+
+            <label for="methode_evolve">Méthode d'évolution :</label>
+            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="methode_evolve" /><br>
+
+            <label for="description">Description :</label>
+            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="description" /><br>
+
+            <label for="Dresseur">Dresseur :</label>
+            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="Dresseur" /><br>
+
+            <button style="border: 2px solid black; border-radius: 4px;" type="submit">Send</button>
+        </form>
 
     </body>
 </html>
