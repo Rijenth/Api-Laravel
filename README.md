@@ -22,6 +22,7 @@
       - Une ressource API (pokemonRessource.php)
       - Un form request (pokemonRequest.php)
       - un Test (ApiTest.php)
+      - La gestion d’un fichier uploadé (récupération et stockage) (required|mimes:pdf, jpg, jpeg, gif, png|max:20000) (uploadController.php)
            
       
 
@@ -35,7 +36,7 @@
 7. ’application doit être entièrement fonctionnelle sans bug
 
 Actuellement en cours :
-      - la gestion d’un fichier uploadé (récupération et stockage)
+     
 
 To be done : 
 
