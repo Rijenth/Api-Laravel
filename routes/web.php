@@ -2,6 +2,8 @@
 
 use App\Models\pokemon;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\uploadController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +24,11 @@ Route::get('/formulaire', function() {
     return view('formulaire');
 })->name('formulaire.get');
 
+Route::get('/upload', function () {
+    return view('upload');
+});
 
+Route::post('/upload', [uploadController::class, 'upload']);
 
 
 

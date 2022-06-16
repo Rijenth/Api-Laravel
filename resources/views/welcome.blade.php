@@ -22,7 +22,14 @@
     </head>
     <body class="antialiased">
             <p>Hello world !</p>
-            <button><a href="/formulaire">Créer un pokémon</a></button>
+            <button style="border: 2px solid black; border-radius: 4px;" type="text">
+                <a href="/formulaire">Créer un pokémon</a>
+            </button>
+            
+            <button style="border: 2px solid black; border-radius: 4px;" type="text">
+                <a href="/upload">Upload un fichier</a>
+            </button>
+            
 
     </body>
 </html>

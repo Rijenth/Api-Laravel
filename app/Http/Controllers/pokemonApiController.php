@@ -19,6 +19,7 @@ class pokemonApiController extends Controller
         return new pokemonRessource(($pokemon));
     }
 
+
     public function store(pokemonRequest $request){
 
         $request->validated();

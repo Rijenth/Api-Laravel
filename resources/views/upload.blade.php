@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Pokedex</title>
+        <title>Mon upload</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -20,34 +20,18 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-        
-            <label for="MonFormulaire"></label>
+<body>
 
-        <form action="/api/pokemon" method="POST">
-
-            <label for="nom_pok">Nom du pokémon :</label>
-            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="nom_pok" /><br>
-
-            <label for="type_pok1">Type du pokémon 1 :</label>
-            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="type_pok1" /><br>
-
-            <label for="type_pok2">Type du pokémon 2 :</label>
-            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="type_pok2" /><br>
-
-            <label for="methode_evolve">Méthode d'évolution :</label>
-            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="methode_evolve" /><br>
-
-            <label for="description">Description :</label>
-            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="description" /><br>
-
-            <label for="Dresseur">Dresseur :</label>
-            <input style="border: 2px solid black; border-radius: 4px;" type="text" name="Dresseur" /><br>
-
+    <form action="" method="post" enctype="multipart/form-data">
+            @csrf
+            <input type="file" name="file"><br>
             <button style="border: 2px solid black; border-radius: 4px;" type="submit">Send</button>
-        </form>
+    </form>
 
-        <button style="border: 2px solid black; border-radius: 4px;" type="text"><a href="/">Retour</a></button>
+    <button style="border: 2px solid black; border-radius: 4px;" type="text">
+        <a href="/">Retour</a>
+    </button>
 
-    </body>
+</body>
+
 </html>

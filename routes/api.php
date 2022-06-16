@@ -30,6 +30,7 @@ Route::get('/pokemon/{pokemon}', [pokemonApiController::class, 'show'])->name('p
 // Le verbe POST
 Route::post('/pokemon', [pokemonApiController::class, 'store']);
 
+
 // Le verbe PATCH
 Route::patch('/pokemon/{pokemon}', [pokemonApiController::class, 'update']);
 

@@ -35,12 +35,13 @@
 7. ’application doit être entièrement fonctionnelle sans bug
 
 Actuellement en cours :
-   -  une notification déclenché par un évènement
-      - Les notifications sont stocké dans la base de donnée dans la table 'notifications'
+      - la gestion d’un fichier uploadé (récupération et stockage)
 
 To be done : 
 
-   - une notification déclenché par un évènement, 
+   -  une notification déclenché par un évènement (Echec)
+      - Les notifications sont stocké dans la base de donnée dans la table 'notifications'
+
    - une commande Artisan (qui fait plus qu’imprimer du texte),
    - la gestion d’un fichier uploadé (récupération et stockage)
    - Faire un readme correct
