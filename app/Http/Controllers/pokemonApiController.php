@@ -24,7 +24,7 @@ class pokemonApiController extends Controller
 
         $request->validated();
 
-        pokemon::create([
+        $result = pokemon::create([
             'nom_pok' => request('nom_pok'),
             'type_pok1' => request('type_pok1'),
             'type_pok2' => request('type_pok2'),
@@ -33,8 +33,8 @@ class pokemonApiController extends Controller
             'Dresseur' => request('Dresseur')
         ]);
 
-        /* return new pokemonRessource(($result)); */
-        return redirect()->route('formulaire.get');
+        return new pokemonRessource(($result));
+        /* return redirect()->route('formulaire.get'); */
 
     }
 
@@ -57,7 +57,9 @@ class pokemonApiController extends Controller
     public function destroy(pokemon $pokemon){
         
         $pokemon->delete();
-        return response()->json(null, 204);
+        return response()->json([
+            'status' => 'Cet élément a été supprimé !'
+        ]);
     }
 
 }

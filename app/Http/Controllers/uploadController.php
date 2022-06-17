@@ -19,8 +19,9 @@ class uploadController extends Controller
             $randomFileName = time().rand();
             $path = Storage::disk('public')->put($randomFileName, $request->file('file'));
             
+            dd('Votre fichier a été correctement upload à l\'emplacement storage/app/public, dans le fichier : '.$randomFileName);
         }
-        dd('Votre fichier a été correctement upload à l\'emplacement suivant : ', $path);
+        
         return view('upload');
         
     }

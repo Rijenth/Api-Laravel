@@ -18,7 +18,7 @@
    // L'application contient :
       - Un modèle (pokemon.php)
       - Une migration (2022_06_10_095603_create_pokemon_table.php)
-      - Un contrôleur (pokemonApiController.php)
+      - Un contrôleur (pokemonApiController.php) 
       - Une ressource API (pokemonRessource.php)
       - Un form request (pokemonRequest.php)
       - un Test (ApiTest.php)
@@ -36,15 +36,16 @@
 7. ’application doit être entièrement fonctionnelle sans bug
 
 Actuellement en cours :
+   - une commande Artisan (qui fait plus qu’imprimer du texte),
+      Créer un nouveau pokémon avec une commande artisan + Le stock dans
+      un fichier .TXT dans storage/app/public
      
 
 To be done : 
 
    -  une notification déclenché par un évènement (Echec)
       - Les notifications sont stocké dans la base de donnée dans la table 'notifications'
-
    - une commande Artisan (qui fait plus qu’imprimer du texte),
-   - la gestion d’un fichier uploadé (récupération et stockage)
    - Faire un readme correct
    - Utiliser l'api pour afficher sur une page (bonus)
    
