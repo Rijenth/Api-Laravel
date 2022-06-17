@@ -22,7 +22,7 @@
       - Une ressource API (pokemonRessource.php)
       - Un form request (pokemonRequest.php)
       - un Test (ApiTest.php)
-      - La gestion d’un fichier uploadé (récupération et stockage) (required|mimes:pdf, jpg, jpeg, gif, png|max:20000) (uploadController.php)
+      - La gestion d’un fichier uploadé (récupération et stockage) (pdf,jpg,jpeg,gif,png, taille maximal du fichier : 20mo) (uploadController.php)
            
       
 

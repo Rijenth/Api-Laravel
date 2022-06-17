@@ -13,13 +13,14 @@ class uploadController extends Controller
         if($request->hasFile('file')){
 
             $request->validate([
-                'file'=> 'required|mimes:pdf, jpg, jpeg, gif, png|max:20000'
+                'file' => ['required','mimes:pdf,jpg,jpeg,gif,png','max:20000']
             ]);
 
             $randomFileName = time().rand();
             $path = Storage::disk('public')->put($randomFileName, $request->file('file'));
             
         }
+        dd('Votre fichier a été correctement upload à l\'emplacement suivant : ', $path);
         return view('upload');
         
     }
