@@ -57,6 +57,6 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
 | Fonctionnalité              | Commentaire                                   | 
 | ------------------- | ---------------------------------------- | 
 | Gestion d’un fichier uploadé (récupération et stockage)        |  J'ai crée une view contenant un formulaire pour que vous puissiez tester l'upload de fichier.  |
-| Une commande Artisan (qui fait plus qu’imprimer du texte)        |  La commande : php artisan pokemon:show {id},  {id} représente l'id du pokémon dans le pokédex. Cette commande récupère,  depuis l'API, et stock les données du pokémon dans un fichier .txt au niveau de storage\app\public |
+| Une commande Artisan (qui fait plus qu’imprimer du texte)        |  La commande : php artisan pokemon:show {id}.<br>{id} représente l'id du pokémon dans le pokédex.<br>Cette commande récupère,  depuis l'API, et stock les données du pokémon dans un fichier .txt au niveau de storage\app\public |
 
 
