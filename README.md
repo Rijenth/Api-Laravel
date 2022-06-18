@@ -34,7 +34,7 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
    1. DB_DATABASE=pokedex
 5. Dans le terminal, taper 'php artisan serve' pour lancer l'application.
 
-### Résumé technique
+# Résumé technique
 
 | Fonctionnalité             | Disponibilité | Commentaire                                   | 
 | ------------------- | -- | ---------------------------------------- | 
