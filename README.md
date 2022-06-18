@@ -1,3 +1,31 @@
+# Mini projet API Laravel
+
+### Description
+Dans le cadre d'un test technique pour la société Tylto, j'ai travaillé sur une petite API avec le framework Laravel version 9.17.0. Les fonctionnalités précises de cet application sont disponibles dans le tableau en fin de page.
+
+### Le sujet
+Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de donnée, contenant les pokémons de la 1ère génèration, afin de créer un pokédex. Cet API permet ainsi de voir, chercher, mettre à jour et enfin supprimer un pokémon.
+
+# Prérequis technique
+
+### Je vous détaille ici mon environnement de travail.
+
+1. Avoir le logiciel MAMP d'installer sur votre ordinateur.
+2. Avoir la dernière version de PHP (8.1.0)
+3. Importer pokedex.sql dans votre database 'laravel'.
+4. Avoir composer + Laravel d'installer sur votre ordinateur.
+
+
+
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=pokedex
+DB_USERNAME=root
+DB_PASSWORD=root
+
+
 ## Il consiste à développer une mini (web) API avec le framework Laravel respectant les contraintes           ## ci-dessous. Le sujet est libre.
 
 ### Sujet : Pokémon
