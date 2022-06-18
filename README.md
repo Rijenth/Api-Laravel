@@ -41,7 +41,7 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
 | La dernière version du framework Laravel doit être utilisée        | ✅ | Laravel 9.17.0 |
 | Les réponses de l’API doivent être renvoyées en JSON                | ✅             | |
 | Les quatre verbes GET, POST, PATCH et DELETE doivent être utilisées | ✅             | |
-| ----------------------------------------|----------------|----------------|               
+| ------------------- | -- | ---------------------------------------- |            
 | L’application contient au moins :       |              | |                 
 | Un modèle | ✅             | pokemon.php |
 | Une migration                | ✅             | 2022_06_10_095603_create_pokemon_table.php |               
@@ -49,7 +49,7 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
 | Une ressource API                | ✅             | pokemonRessource.php |
 | Un Form Request                | ✅             | pokemonRequest.php |               
 | Un test                  | ✅             | ApiTest.php |
-| ---------------------------|----------------|-------------------------------------------------------------------|   
+| ------------------- | -- | ---------------------------------------- | 
 | Gestion d’un fichier uploadé (récupération et stockage)          | ✅| uploadController.php |
 | Une commande Artisan (qui fait plus qu’imprimer du texte)        | ✅ | ShowPokemonCommand.php |  
 
