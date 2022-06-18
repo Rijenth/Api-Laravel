@@ -49,9 +49,12 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
 | Une ressource API                | ✅             | pokemonRessource.php |
 | Un Form Request                | ✅             | pokemonRequest.php |               
 | Un test                  | ✅             | ApiTest.php |
-| ---------------------------|--------------|----------------|   
-| Gestion d’un fichier uploadé (récupération et stockage)          | ✅| uploadController.php // J'ai crée une view avec un formulaire pour que vous puissiez test l'upload de fichier |
-| Une commande Artisan (qui fait plus qu’imprimer du texte)        | ✅ | ShowPokemonCommand.php 
-                                                                           // La commande : php artisan pokemon:show {id} 
-                                                                           // 'id' => Le numéro du pokémon 
-                                                                           // Cette commande récupère et stock les données du pokémon dans un fichier .txt au                                                                                 niveau de storage\app\public |             
+| ---------------------------|----------------|-------------------------------------------------------------------|   
+| Gestion d’un fichier uploadé (récupération et stockage)          | ✅| uploadController.php |
+| Une commande Artisan (qui fait plus qu’imprimer du texte)        | ✅ | ShowPokemonCommand.php |  
+
+### Détails sur la commande Artisan et sur l'upload de fichier
+// J'ai crée une view avec un formulaire pour que vous puissiez test l'upload de fichier
+La commande : php artisan pokemon:show {id} 
+// 'id' => Le numéro du pokémon 
+// Cette commande récupère et stock les données du pokémon dans un fichier .txt au                                                                                 niveau de storage\app\public
