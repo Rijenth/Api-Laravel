@@ -6,14 +6,30 @@ Dans le cadre d'un test technique pour la société Tylto, j'ai travaillé sur u
 ### Le sujet
 Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de donnée, contenant les pokémons de la 1ère génèration, afin de créer un pokédex. Cet API permet ainsi de voir, chercher, mettre à jour et enfin supprimer un pokémon.
 
-# Prérequis technique
+# Prérequis 
 
-### Je vous détaille ici mon environnement de travail.
-
+### Préparation
 1. Avoir le logiciel MAMP d'installer sur votre ordinateur.
 2. Avoir la dernière version de PHP (8.1.0)
-3. Importer pokedex.sql dans votre database 'laravel'.
-4. Avoir composer + Laravel d'installer sur votre ordinateur.
+3. Sur PHPMYADMIN (ou sur terminal), créer une database 'pokedex' et y importer la bdd 'pokedex.sql'
+4. Telecharger et installer 'Composer' : [https://getcomposer.org/download/](https://getcomposer.org/download/)
+   1. Lors de l'installation, vous devrez lier Composer au PHP que vous utilisez sur MAMP : [Lier Composer à PHP/MAMP](https://documentation.mamp.info/en/MAMP-PRO-Windows/How-Tos/General/SetupComposer/#:~:text=Install%20Composer&text=Click%20on%20the%20“Composer-Setup,be%20guided%20through%20the%20installation)
+5. Télécharger ce repertoire et l'extraire dans votre dossier 'MAMP\htdocs'.
+6. Ouvrir un terminal, utiliser la commande 'cd' pour vous rendre dans le dossier du projet.
+   1. Vous pouvez vérifier la version de Composer en tapant 'composer -v' dans le terminal.
+   2. Vous pouvez vérifier le bon fonctionnement de Laravel en tapant 'php artisan' dans le terminal.
+   3. Si ces commandes n'ont pas fonctionnées, verifier que votre terminal pointe bien un repertoire 'MAMP\htdocs\VotreProjet'
+
+### Lancer le projet
+
+1. Lancer le serveur MAMP
+2. Ouvrir un terminal, utiliser 'cd' pour vous rendre dans le dossier du projet.
+3. Taper 'php artisan serve' pour lancer l'application. Attention, ce terminal ne doit pas être fermé !
+4. Vous pouvez maintenant tester les fonctionnalités de ce projet !
+
+   
+      
+  
 
 
 
