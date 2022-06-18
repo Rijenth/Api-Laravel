@@ -34,7 +34,7 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
    1. DB_DATABASE=pokedex
 5. Dans le terminal, taper 'php artisan serve' pour lancer l'application.
 
-# Résumé technique
+# Résumé du projet
 
 | Fonctionnalité             | Disponibilité | Commentaire                                   | 
 | ------------------- | -- | ---------------------------------------- | 
@@ -51,9 +51,14 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
 | Un test                  | ✅             | ApiTest.php |
 | ------------------- | -- | ---------------------------------------- | 
 | Gestion d’un fichier uploadé (récupération et stockage)          | ✅| uploadController.php |
-| Une commande Artisan (qui fait plus qu’imprimer du texte)        | ✅ | ShowPokemonCommand.php |  
+| Une commande Artisan        | ✅ | ShowPokemonCommand.php |  
 
 ### Détails sur la commande Artisan et sur l'upload de fichier
+| Fonctionnalité              | Commentaire                                   | 
+| ------------------- | ---------------------------------------- | 
+| Gestion d’un fichier uploadé (récupération et stockage)        |  J'ai crée une view contenant un formulaire pour que vous puissiez tester l'upload de fichier.  |
+| Une commande Artisan (qui fait plus qu’imprimer du texte)        |    |
+
 // J'ai crée une view avec un formulaire pour que vous puissiez test l'upload de fichier
 La commande : php artisan pokemon:show {id} 
 // 'id' => Le numéro du pokémon 
