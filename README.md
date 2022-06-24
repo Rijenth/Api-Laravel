@@ -12,7 +12,7 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
 1. Avoir le logiciel MAMP d'installer sur votre ordinateur.
 2. Avoir la dernière version de PHP (8.1.0).
 3. Sur PHPMYADMIN (ou sur terminal), créer une database 'pokedex' et y importer la bdd 'pokedex.sql'.
-4. Telecharger et installer 'Composer' : [https://getcomposer.org/download/](https://getcomposer.org/download/)
+4. Telecharger et installer 'Composer' : [Installer Composer](https://getcomposer.org/download/)
    1. Lors de l'installation, vous devrez lier Composer au PHP que vous utilisez sur MAMP : [Lier Composer à PHP/MAMP](https://documentation.mamp.info/en/MAMP-PRO-Windows/How-Tos/General/SetupComposer/#:~:text=Install%20Composer&text=Click%20on%20the%20“Composer-Setup,be%20guided%20through%20the%20installation)
 5. Ouvrir un terminal, utiliser la commande 'cd' pour vous rendre dans 'MAMP\htdocs'.
 6. Dans MAMP\bin\php\php8.1.0\php.ini, vous devez enlever le commentaire (';') pour les extentions suivantes : 
