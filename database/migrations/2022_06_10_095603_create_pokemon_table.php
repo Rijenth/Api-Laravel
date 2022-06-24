@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use phpDocumentor\Reflection\Types\Nullable;
 
 return new class extends Migration
 {
@@ -24,11 +25,11 @@ return new class extends Migration
                 $table->bigIncrements('id_pok');
                 $table->string('nom_pok', 20);
                 $table->string('type_pok1', 10);
-                $table->string('type_pok2', 10);
-                $table->string('methode_evolve', 20);
+                $table->string('type_pok2', 10)->nullable();
+                $table->string('methode_evolve', 20)->nullable();
                 $table->text('description');
-                $table->string('Dresseur', 15);
-                $table->text('couleur');
+                $table->string('Dresseur', 15)->nullable();
+                $table->text('couleur')->nullable();
             });
 
         }

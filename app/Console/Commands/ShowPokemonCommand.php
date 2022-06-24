@@ -32,7 +32,8 @@ class ShowPokemonCommand extends Command
     public function handle()
     {
         $idPokemon = $this->argument('id');
-        $result = Http::get('http://127.0.0.1:8000/api/pokemon/'.$idPokemon);
+        $result = Http::get('http://127.0.0.1:8000/api/pokemon/'.$idPokemon); // Ne pas faire ça sauf si API externe
+    /*  $result = (new pokemonRessource(pokemon::find($idPokemon)))->response(); Méthode facilitée */
         $randomFileName = $idPokemon.time().'.txt';
         $path = Storage::disk('public')->put($randomFileName, $result);
         $this->info('Le resultat de votre requête a été stocké dans le repertoire storage/app/public sous le nom : '.$randomFileName);

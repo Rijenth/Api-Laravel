@@ -22,15 +22,15 @@ class pokemonApiController extends Controller
 
     public function store(pokemonRequest $request){
 
-        $request->validated();
+        /* $request->validated();  */
 
         $result = pokemon::create([
-            'nom_pok' => request('nom_pok'),
-            'type_pok1' => request('type_pok1'),
-            'type_pok2' => request('type_pok2'),
-            'methode_evolve' => request('methode_evolve'),
-            'description' => request('description'),
-            'Dresseur' => request('Dresseur')
+            'nom_pok' => $request->input('nom_pok'), 
+            'type_pok1' => $request->input('type_pok1'), 
+            'type_pok2' => $request->input('type_pok2'), 
+            'methode_evolve' => $request->input('methode_evolve'),
+            'description' => $request->input('description'),
+            'Dresseur' => $request->input('Dresseur')
         ]);
 
         return new pokemonRessource(($result));
@@ -40,15 +40,15 @@ class pokemonApiController extends Controller
 
     public function update(pokemonRequest $request, pokemon $pokemon){
 
-        $request->validated();     
+        /* $request->validated(); */     
        
         $pokemon->update([
-            'nom_pok' => request('nom_pok'), 
-            'type_pok1' => request('type_pok1'), 
-            'type_pok2' => request('type_pok2'), 
-            'methode_evolve' => request('methode_evolve'), 
-            'description' => request('description'), 
-            'Dresseur' => request('Dresseur') 
+            'nom_pok' => $request->input('nom_pok'), 
+            'type_pok1' => $request->input('type_pok1'), 
+            'type_pok2' => $request->input('type_pok2'), 
+            'methode_evolve' => $request->input('methode_evolve'), 
+            'description' => $request->input('description'), 
+            'Dresseur' => $request->input('Dresseur') 
         ]);
 
         return new pokemonRessource($pokemon);
@@ -58,7 +58,7 @@ class pokemonApiController extends Controller
         
         $pokemon->delete();
         return response()->json([
-            'status' => 'Cet élément a été supprimé !'
+            'status' => 'Cet element a ete supprime !'
         ]);
     }
 

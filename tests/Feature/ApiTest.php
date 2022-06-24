@@ -15,21 +15,13 @@ class ApiTest extends TestCase
      */
 
     
-    public function test_show_pokemon_api_request_returns_a_successful_response()
-    {
-        $this
-            ->getJson(route('pokemon.show', ['pokemon' => "151"]))
-            ->assertOk()
-            ->assertJsonCount(8, 'data');
-            
-        
-    }
 
     public function test_json_structure_of_the_response_is_ok()
     {
         $this
         ->getJson(route('pokemon.show', ['pokemon' => "151"]))
         ->assertOk()
+        ->assertJsonCount(8, 'data')
         ->assertJsonStructure([
             'data' => [
                 'id_pok',
