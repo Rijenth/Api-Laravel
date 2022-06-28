@@ -40,7 +40,7 @@ Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de 
 | ------------------- | -- | ---------------------------------------- | 
 | La dernière version du framework Laravel doit être utilisée        | ✅ | Laravel 9.17.0 |
 | Les réponses de l’API doivent être renvoyées en JSON                | ✅             | |
-| Les quatre verbes GET, POST, PATCH et DELETE doivent être utilisées | ✅             | |
+| Les quatre verbes GET, POST, PATCH et DELETE doivent être utilisées | ✅             | GET : /api/pokemon</br> GET : /api/pokemon/{id}</br> POST : /api/pokemon</br> PATCH : /api/pokemon/{id} </br> DELETE : /api/pokemon/{id} |
 | ------------------- | -- | ---------------------------------------- |            
 | L’application contient au moins :       |              | |                 
 | Un modèle | ✅             | pokemon.php |
