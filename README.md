@@ -4,7 +4,7 @@
 Dans le cadre d'un test technique pour la société Tylto, j'ai travaillé sur une petite API avec le framework Laravel version 9.17.0. Les fonctionnalités précises de cet application sont disponibles dans le tableau en fin de page.
 
 ### Le sujet
-Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de donnée, contenant les pokémons de la 1ère génèration, afin de créer un pokédex. Cet API permet ainsi de voir, chercher, mettre à jour et enfin supprimer un pokémon.
+Grand fan des pokémons à mes heures perdues, j'ai utilisé une de mes base de donnée, contenant les pokémons de la 1ère génération, afin de créer un pokédex. Cet API permet ainsi de voir, chercher, mettre à jour et enfin supprimer un pokémon.
 
 # Prérequis 
 
